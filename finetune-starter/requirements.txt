@@ -1,0 +1,22 @@
+# Minimum versions are conservative floors, not guarantees. The transformers floor
+# comes from its documentation (the 4.51 docs already use eval_strategy and
+# processing_class). This starter was actually run (tiny-model smoke tests, small-model
+# runs and one default-model run, all on CPU) with: torch 2.14.0 (CPU build),
+# transformers 5.17.0, peft 0.21.0, datasets 5.0.1, accelerate 1.15.0 on Python 3.12.
+# Older releases are untested. train_lora.py adapts to the evaluation_strategy ->
+# eval_strategy and tokenizer -> processing_class renames by inspecting the installed
+# signatures, but that fallback was only unit-tested, not run against an old release.
+#
+# GPU users: install the CUDA build of torch from https://pytorch.org/get-started/locally/
+# first. CPU-only users can run:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.4
+transformers>=4.51
+peft>=0.14
+datasets>=3.0
+accelerate>=1.0
+
+# Only needed to run the unit tests in tests/ (they do not need torch). Without nbformat
+# the one test that validates the notebook is skipped:
+# pytest>=8.0
+# nbformat>=5.9

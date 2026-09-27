@@ -1,0 +1,10 @@
+# Runtime dependencies (kept deliberately small).
+# Tested with numpy 2.5.3 and anthropic 1.8.0 on Python 3.12; the lower bounds
+# below are conservative guesses that have not been tested. Python 3.10+ needed.
+numpy>=1.24
+anthropic>=0.40
+
+# Optional extras - install only if you want them:
+#   sentence-transformers   real semantic embeddings (EMBEDDER=sentence-transformers)
+#                           and the CrossEncoderReranker; pulls in PyTorch (large)
+#   pypdf                   read .pdf files with page numbers in ingest.py

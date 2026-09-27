@@ -1,0 +1,10 @@
+{"prompt": "What is the capital of France? Answer in one short sentence.", "expected": "Paris"}
+{"prompt": "What is the capital of Japan? Answer in one short sentence.", "expected": "Tokyo"}
+{"prompt": "What is 12 plus 15? Answer with just the number.", "expected": "27"}
+{"prompt": "What is 9 times 8? Answer with just the number.", "expected": "72"}
+{"prompt": "Which planet is known as the Red Planet? Answer in one short sentence.", "expected": "Mars"}
+{"prompt": "How many days are there in a week? Answer in one short sentence.", "expected": ["7", "seven"]}
+{"prompt": "What is the opposite of the word 'hot'? Answer with one word.", "expected": "cold"}
+{"prompt": "Define photosynthesis in one sentence.", "expected": "light"}
+{"prompt": "What is the largest ocean on Earth? Answer in one short sentence.", "expected": "Pacific"}
+{"prompt": "What is the first month of the year? Answer with one word.", "expected": "January"}

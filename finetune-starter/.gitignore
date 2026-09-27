@@ -1,0 +1,17 @@
+# training and evaluation outputs
+outputs/
+results.json
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# model files and caches
+*.safetensors
+*.bin
+*.pt
+.cache/
+hf_cache/
