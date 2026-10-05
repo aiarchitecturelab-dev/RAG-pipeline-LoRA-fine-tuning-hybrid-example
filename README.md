@@ -1,8 +1,14 @@
 # RAG vs Fine-Tuning starter template
 
-Watch the video: coming soon.
+Watch the videos: Part 1, "RAG vs Fine-Tuning for Enterprise LLMs" — coming soon. Part 2, "We Built the RAG + Fine-Tune
+Hybrid" — coming soon.
 
-Starter code and a decision guide for the video **"RAG vs Fine-Tuning for Enterprise LLMs"**.
+Starter code and a decision guide for the video series **"RAG vs Fine-Tuning for Enterprise LLMs"**.
+
+**Part 2 update:** the `hybrid/` pipeline below is no longer just described in this README — it's the subject of its own
+video, which trains a real LoRA adapter on camera (loss, timing and adapter size are all from a real run, not slides) and
+runs all three `hybrid_example.py` demo questions shown in `hybrid/README.md`. See [`hybrid/README.md`](hybrid/README.md)
+for the walkthrough.
 
 The video argues that a base LLM's knowledge is frozen at training time. **RAG** (retrieval-augmented generation) gives it a
 live lookup: embed the question, search pre-embedded document chunks, put the best chunks into the prompt, and answer with

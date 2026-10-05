@@ -1,6 +1,9 @@
 # Hybrid example: RAG for the facts, LoRA for the behavior
 
-The video calls this the mature enterprise default: **retrieval supplies the facts** (fresh, cited, permission-filtered), and a
+**This is what Part 2 of the video series walks through**, end to end: training the LoRA adapter live (real loss curve, real
+timing), then running all three demo questions below with the freshly trained adapter and reading the real validation output.
+
+Part 1 calls this the mature enterprise default: **retrieval supplies the facts** (fresh, cited, permission-filtered), and a
 **light LoRA fine-tune supplies the behavior** (formal tone, one strict JSON object, an escalation flag).
 `hybrid_example.py` is a short, commented script that connects the two halves of this repository:
 
